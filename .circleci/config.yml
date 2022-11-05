@@ -5,10 +5,9 @@ workflows:
     jobs:
       - test
 jobs:
-  tests:
+  test:
     docker:
       - image: cimg/node:14.13.0
     steps:
-      - checkout:
+      - checkout
       - run: --version
-      
