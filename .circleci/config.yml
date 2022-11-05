@@ -1,0 +1,14 @@
+version: 2.1
+
+workflows:
+  practice-circleCi:
+    jobs:
+      - test
+jobs:
+  tests:
+    docker:
+      - image: cimg/node:14.13.0
+    steps:
+      - checkout:
+      - run: --version
+      
